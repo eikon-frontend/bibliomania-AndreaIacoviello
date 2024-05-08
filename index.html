@@ -1,17 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bibliomania</title>
-    <link rel="stylesheet" href="scripts/star-rating.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- 🦊 Votre page ici -->
 
-    <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
-    <!-- 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bibliomania</title>
+  <link rel="stylesheet" href="scripts/star-rating.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Détails du livre </h1>
+  <div class="image"> <img src="img/couvertures/Rectangle 7.png"> </div>
+  <h2>Controverses, une histoire juridique et éthique de la photographie</h2>
+  <h3>Par Christian Pirker</h3>
+
+  <div class="liste">
+    <div class="listelue">
+      <p>Ajouter à la liste lus</p>
+    </div>
+    <div class="listelire">
+      <p>Ajouter à la liste lire</p>
+    </div>
+  </div>
+  <div class="étoiles">
+    <img src="img/etoiles.png"> <img src="img/etoiles-1.png">
+    <br /> <img src="img/4.5/5.png"> <img src="img/Evaluer.png">
+  </div>
+  <div class="description2">
+    <h2>Description</h2>
+  </div>
+  <div class="description">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  </div>
+  <h4>Année de publication: 2008 <br /> Genre(s): livre photo </h4>
+  <h2>Commentaires</h2>
+  <div class="profil"> <img src="img/icone_personnage/sarah 1.jpg">
+    <div class="ajout_comm">
+      <p>ajouter un commentaire</p>
+    </div>
+  </div>
+  <img src="img/icone_personnage/sarah 4.png">
+  <div class="Prénom">
+    <p>Andrea Iacoviello</p>
+  </div>
+  <div class="comm">
+    <p>Excellent livre ! Je le recommande.</p>
+  </div>
+  <img src="img/icone_personnage/sarah 2.png">
+  <div class="Prénom">
+    <p>Paula Melo</p>
+  </div>
+  <div class="comm">
+    <p>Super intéressant !!!</p>
+  </div>
+  <img src="img/icone_personnage/sarah 5.png">
+  <div class="Prénom">
+    <p>Marta Coelho</p>
+  </div>
+  <div class="comm">
+    <p>Pas mal.</p>
+  </div>
+  <div class="bouton_lire_plus">
+    <p>voir plus</p>
+  </div>
+  <img src="img/navigation.png"> <!-- 🦊 Votre page ici -->
+
+  <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
+  <!-- 
         <select class="star-rating" aria-label="Note utilisateur">
             <option value="">Select a rating</option>
             <option value="5">Excellent</option>
@@ -21,12 +84,13 @@
             <option value="1">Terrible</option>
         </select>
     -->
-    <!-- 💡 Script pour gérer le rating d'un livre -->
-    <script src="scripts/star-rating.min.js"></script>
-    <script>
-      var stars = new StarRating(".star-rating", {
-        tooltip: "Choisissez votre note",
-      });
-    </script>
-  </body>
+  <!-- 💡 Script pour gérer le rating d'un livre -->
+  <script src="scripts/star-rating.min.js"></script>
+  <script>
+    var stars = new StarRating(".star-rating", {
+      tooltip: "Choisissez votre note",
+    });
+  </script>
+</body>
+
 </html>
